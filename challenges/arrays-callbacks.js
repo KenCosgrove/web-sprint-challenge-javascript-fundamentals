@@ -1,6 +1,7 @@
 // ==== ADVANCED Array Methods ====
 
-// Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
+// Given this zoo data from around the United States, follow the instructions below.  Use
+// the specific array methods in the requests below to solve the problems.
 
 const zooAnimals = [
   { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
@@ -17,10 +18,21 @@ const zooAnimals = [
 
 /* Request 1: .forEach()
 
-The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
+The zoos want to display both the scientific name and the animal 
+name in front of the habitats. Populate the displayNames array with only the
+ animal_name and scientific_name of each animal. displayNames will be an array of strings,
+  and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = [];
+
+function newarr(data){
+  const displayNames = [];
+  data.forEach((animal) => {
+    displayNames.push(`Name: ${animal.animal_name}, Scientific: ${scientific_name}`)
+  });
+  return displayNames;
+}
+
 console.log(displayNames);
 
 /* Request 2: .map()
