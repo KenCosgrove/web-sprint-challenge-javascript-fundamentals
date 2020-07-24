@@ -142,15 +142,11 @@ function consume(a, b, cb) {
  * last-name, nice to meet you!"
  */
 
-function add(num1, num2) {
-  return num1 + num2;
-}
-function multiply(num1, num2) {
-  return num1 * num2;
-}
-function greeting(first, last) {
-  return `Hello ${first} ${last}, nice to meet you!`;
-}
+const add = (num1, num2) => num1 + num2;
+
+const multiply = (num1, num2) => num1 * num2;
+
+const greeting = (first, last) => `Hello ${first} ${last}, nice to meet you!`;
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 console.log(consume(2, 2, add)); // 4

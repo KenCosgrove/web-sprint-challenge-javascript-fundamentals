@@ -36,4 +36,4 @@ function summation(num) {
   return count;
 }
 
-console.log(summation(5));
+console.log(summation(6));
